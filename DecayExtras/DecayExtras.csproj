@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>DecayReloader</RootNamespace>
+        <AssemblyName>DecayExtras</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Vanilla Deploy|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Oxide Deploy|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>D:\rustservers\release\RustDedicated_Data\Managed\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Deploy Vanilla|AnyCPU' ">
+      <OutputPath>bin\Deploy Vanilla\</OutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Deploy Oxide|AnyCPU' ">
+      <OutputPath>bin\Deploy Oxide\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="0SplashUtilities">
+          <HintPath>D:\rustservers\HarmonyBuilds\0SplashUtilities.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Console">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\Facepunch.Console.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Network">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\Facepunch.Network.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Rcon">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\Facepunch.Rcon.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.System">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\Facepunch.System.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.Unity">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\Facepunch.Unity.dll</HintPath>
+        </Reference>
+        <Reference Include="Facepunch.UnityEngine">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\Facepunch.UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="Rust.Global">
+          <HintPath>D:\rustservers\release\RustDedicated_Data\Managed\Rust.Global.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AIModule">
+          <HintPath>D:\rustservers\release\RustDedicated_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>D:\rustservers\release-nooxide\RustDedicated_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+          <HintPath>D:\rustservers\release\RustDedicated_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="DecayExtras.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+    <Target Name="CopyToHarmonyMods" AfterTargets="Build">
+        <Message Text="Copying DLL to Harmony Mods Builds folder" Importance="High" />
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="D:\rustservers\HarmonyBuilds" />
+    </Target>
+</Project>

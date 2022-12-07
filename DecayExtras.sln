@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecayExtras", "DecayExtras\DecayExtras.csproj", "{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Deploy Vanilla|Any CPU = Deploy Vanilla|Any CPU
+		Deploy Oxide|Any CPU = Deploy Oxide|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}.Deploy Vanilla|Any CPU.ActiveCfg = Deploy Vanilla|Any CPU
+		{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}.Deploy Vanilla|Any CPU.Build.0 = Deploy Vanilla|Any CPU
+		{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}.Deploy Oxide|Any CPU.ActiveCfg = Deploy Oxide|Any CPU
+		{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}.Deploy Oxide|Any CPU.Build.0 = Deploy Oxide|Any CPU
+	EndGlobalSection
+EndGlobal
