@@ -4,7 +4,7 @@
     <Import Project="C:\Users\russ\RiderProjects\SplashUtilities\SplashUtilities\RustHarmony.props" Condition="Exists('C:\Users\russ\RiderProjects\SplashUtilities\SplashUtilities\RustHarmony.props')" />
     <PropertyGroup>
         <ProjectGuid>{B88CDA43-F0BD-4A04-AAA5-C6DE1F349200}</ProjectGuid>
-        <RootNamespace>DecayReloader</RootNamespace>
+        <RootNamespace>DecayExtras</RootNamespace>
         <AssemblyName>DecayExtras</AssemblyName>
     </PropertyGroup>
 
